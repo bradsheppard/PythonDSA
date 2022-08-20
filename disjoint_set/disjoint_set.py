@@ -12,6 +12,12 @@ class DisjointSet:
 
         return x
 
+    def is_same_component(self, x: int, y: int):
+        x_root = self.find_root(x)
+        y_root = self.find_root(y)
+
+        return x_root == y_root
+
     def union(self, x: int, y: int):
         root_x = self.find_root(x)
         root_y = self.find_root(y)
