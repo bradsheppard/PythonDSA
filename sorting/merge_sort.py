@@ -1,5 +1,8 @@
 from typing import List
 
+# Time: O(nlogn)
+# Space: O(n)
+
 
 def merge_sort(array: List[int]):
     aux_array = list(array)

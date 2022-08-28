@@ -1,5 +1,7 @@
 from typing import List
 
+# Time: O(nlogn)
+# Space: O(log)
 
 def quick_sort(nums: List[int]) -> List[int]:
     _quick_sort_helper(nums, 0, len(nums) - 1)
