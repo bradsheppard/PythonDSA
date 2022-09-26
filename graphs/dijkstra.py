@@ -2,6 +2,11 @@ import collections
 import heapq
 from typing import List
 
+# Space O(V + E)
+# Time (V + ElogE)
+
+# Can achieve Time O((V + E) logV) if we use a heap with "update" implementation
+
 def dijkstra(matrix: List[List[int]], k: int):
     edge_dict = collections.defaultdict(list)
     n = len(matrix)
